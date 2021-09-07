@@ -1,6 +1,10 @@
 <template>
   <div class="app-wrapper">
     <el-menu :router="true" class="nav-menu" text-color="#cbcbcb" :default-active="$route.name" mode="horizontal">
+      <el-menu-item index="active">
+        <i class="el-icon-success"></i>
+        <span slot="title">测似</span>
+      </el-menu-item>
       <el-menu-item index="pendingTransactions">
         <i class="el-icon-success"></i>
         <span slot="title">pending交易</span>
@@ -12,6 +16,10 @@
       <el-menu-item index="getTransaction">
         <i class="el-icon-discover"></i>
         <span slot="title">查询交易</span>
+      </el-menu-item>
+      <el-menu-item index="logs">
+        <i class="el-icon-discover"></i>
+        <span slot="title">日志</span>
       </el-menu-item>
     </el-menu>
     <main class="main">

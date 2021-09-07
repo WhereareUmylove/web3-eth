@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 
 import Web3 from "web3"
+// Vue.prototype.$web3 = new Web3("http://172.18.10.153:18545")
 Vue.prototype.$web3 = new Web3("https://http-testnet.hecochain.com")
 Vue.prototype.$Web3 = Web3
 

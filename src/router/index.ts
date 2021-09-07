@@ -47,6 +47,15 @@ const routes = [
       component: () => import('@/views/getTransaction/index.vue')
     }]
   },
+  {
+    path: '/logs',
+    component: Main,
+    children: [{
+      path: '',
+      name: 'logs',
+      component: () => import('@/views/logs/index.vue')
+    }]
+  },
 ]
 
 const router = new VueRouter({

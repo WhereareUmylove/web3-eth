@@ -30,7 +30,6 @@ export default class App extends Vue {
     this.$web3.eth
       .subscribe("pendingTransactions")
       .on("data", (data) => {
-        console.log(1)
         if (this.tableData.length > 9) this.tableData.pop()
         this.tableData.unshift(data)
       })
